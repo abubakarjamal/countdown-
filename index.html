@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="w3.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Launch countdown timer</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="main">
+  <div >
+    <h2 class="heading w3-wide">We're launching soon
+</h2>
+  </div>
+  <div class="time">
+    <div class="w3-margin">
+       <div class="day">
+             <h2 class="w3-center day-hand  w3-xlarge w3-padding">00</h2>
+        </div>
+      <h3 class="min">Days</h3>
+    </div>
+      <div class="w3-margin">
+        <div class="hour">
+             <h2 class="w3-center hour-hand w3-xlarge w3-padding">00</h2>
+        </div>
+      <h3 class="min">hours</h3>
+    </div>
+      <div class="w3-margin">
+          <div class="minute">
+             <h2 class="w3-center minutes-hand w3-xlarge w3-padding">00</h2>
+        </div>
+      <h3 class="min">Minutes</h3>
+    </div>  
+    <div class="w3-margin">
+        <div class="second">
+             <h2 class="w3-center second-hand  w3-xlarge w3-padding">00</h2>
+        </div>
+      <h3 class="min">Seconds</h3>
+    </div>
+  </div>
+  <div class="hills">
+    <div class="pin">
+      <img class="" src="icon-facebook.svg" alt="" />
+    </div>
+    <div class="pin">
+      <img class="" src="icon-Pinterest.svg" alt="" />
+    </div>
+    <div class="pin">
+      <img class=""  src="icon-instagram.svg" alt="" />
+    </div>
+  </div>
+</div>
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script type="text/javascript" charset="utf-8">
+    var day =document.querySelector(".day-hand");
+    var hour = document.querySelector(".hour-hand ");
+    var minut = document.querySelector(".minutes-hand")
+    var secon = document.querySelector(".second-hand")
+    console.log(minut)
+    console.log(hour)
+    console.log(secon)
+    console.log(day)
+    var countDownDate = new Date("Jul 22, 2023 15:37:25").getTime()
+    
+    console.log(countDownDate)
+    var x =  setInterval(function(){
+      
+      var now = new Date().getTime()
+      var x = countDownDate - now
+      console.log()
+      var days = Math.floor(x / (1000 * 60 * 60 * 24 ));
+      console.log(days)
+      var hours = Math.floor((x % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      console.log(hours)
+      var minutes = Math.floor((x % (1000 * 60 * 60)) / (1000 * 60))
+      console.log(minutes)
+      var seconds = Math.floor((x % (1000 * 60)) / 1000);
+      console.log(seconds)
+      
+ day.innerHTML = days 
+ hour.innerHTML = hours
+ minut.innerHTML = minutes
+ secon.innerHTML = seconds 
+      
+    }, 1000)
+    
+    
+  
+
+  </script>
+</body>
+</html>
