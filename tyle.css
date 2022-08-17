@@ -1,0 +1,121 @@
+@media screen and (min-width: 400px) {
+  body{
+    background-color: hsl(234, 17%, 12%);
+    font-family:red;
+    font-size: 18px;
+    color:white;
+    font-family: Helvetica;
+    font-weight:bold;
+    margin:auto;
+    margin:auto;
+    
+  
+    
+  }
+  .hour,.day,.second,.minute{
+    color:hsl(345, 95%, 68%);
+    background-color: hsl(236, 21%, 26%);
+    border-radius:8px ;
+    align-content: center ;
+    padding:0;
+    margin: 0;
+  }
+  .second-hand,.minutes-hand,.day-hand,.hour-hand {
+    font-weight:bold;
+    
+  }
+  .min{
+    color:rgb(92,92,116);
+  }
+  .main{
+    background-image:url('bg-stars.svg');
+    
+  }
+  .hills{
+    background-image:url('pattern-hills.svg');
+    background-color: hsl(236, 21%, 26%);
+    display: flex;
+    margin: 0;
+    
+    justify-content:center;
+    align-items:center;
+  }
+  .pin{
+    margin:10px;
+    padding:20px;
+  }
+  .heading{
+  justify-content: center;
+  margin:20px;
+  color:white;
+  text-shadow:2px 2px 4px #000000;
+
+  }
+  .time{
+    display :flex  ;
+    
+  }
+}
+@media screen and (min-width: 800px) {
+  body{
+    background-color: hsl(234, 17%, 12%);
+    font-family:red;
+    font-size: 23px;
+    color:white;
+    font-family: Helvetica;
+    font-weight:bold;
+    margin:auto;
+    padding:auto;
+    
+  
+    
+  }
+    .hour,.day,.second,.minute{
+    color:hsl(345, 95%, 68%);
+    background-color: hsl(236, 21%, 26%);
+    border-radius:8px ;
+    align-content: center ;
+    padding:0;
+    margin: 40px 20px ;
+  }
+  .second-hand,.minutes-hand,.day-hand,.hour-hand {
+    font-weight:bold;
+    
+  }
+  .min{
+    color:rgb(92,92,116);
+    margin:40px 20px;
+  }
+  .main{
+    background-image:url('bg-stars.svg');
+    margin:auto;
+  } 
+  .hills{
+    background-image:url('pattern-hills.svg');
+    background-color: hsl(236, 21%, 26%);
+    display: flex;
+    margin: 100px 0 0 0;
+    padding:auto;
+    justify-content:center;
+    align-items:center;
+  }
+  .pin{
+    margin:10px;
+    padding:20px;
+  }
+  .heading{
+    
+    display: flex;
+    align-items:center ;
+  justify-content: center;
+  margin:45px 20px;
+  color:white;
+  text-shadow:2px 2px 4px #000000;
+
+  }
+  .time{
+    display :flex  ;
+    justify-content:center ;
+    align-items: center;
+  }
+}
